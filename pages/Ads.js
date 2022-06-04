@@ -1,7 +1,7 @@
 import axios from "axios";
 import React from "react";
 
-const baseURL = "http://localhost:3000/api/hello";
+const baseURL = "http://localhost:3001/api/hello";
 
 export default function AdsBanner() {
   const [ads, setAds] = React.useState(null);
@@ -16,8 +16,7 @@ export default function AdsBanner() {
 
   return (
     <div>
-      <h1>{ads.Company}</h1>
-      <h1>{ads.url}</h1>
+      <h1>{ads.message}</h1>
     </div>
   )
 }
