@@ -36,9 +36,9 @@ async function handler(req, res) {
   };
 
   var logo = {
-    Binance: "http://localhost:3000/static/media/logo200x200.811c624f.png",
-    Apple: "http://localhost:3000/static/media/logo200x200.811c624f.png",
-    Facebook: "http://localhost:3000/static/media/logo200x200.811c624f.png"
+    Binance: "https://ads-app-atomosdovini.vercel.app/static/media/logo200x200.811c624f.png",
+    Apple: "https://ads-app-atomosdovini.vercel.app/static/media/logo200x200.811c624f.png",
+    Facebook: "https://ads-app-atomosdovini.vercel.app/static/media/logo200x200.811c624f.png"
   }
 
   var select_ads_data = randomize[Math.floor(Math.random()*randomize.length)]
