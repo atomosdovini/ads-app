@@ -38,10 +38,10 @@ async function handler(req, res) {
   };
 
   var logo = {
-    Binance:"https://ads-app-atomosdovini.vercel.app/pages/api/assets/binance.png",
-    Apple: "https://ads-app-atomosdovini.vercel.app/pages/api/assets/apple.png",
-    Facebook: "https://ads-app-atomosdovini.vercel.app/pages/api/assets/facebook.png",
-    Ecoexchange: "https://ads-app-atomosdovini.vercel.app/pages/api/assets/ecoexchange.png"
+    Binance:"https://raw.githubusercontent.com/atomosdovini/ads-app/main/pages/api/assets/binance.png",
+    Apple: "https://raw.githubusercontent.com/atomosdovini/ads-app/main/pages/api/assets/apple.png",
+    Facebook: "https://raw.githubusercontent.com/atomosdovini/ads-app/main/pages/api/assets/facebook.png",
+    Ecoexchange: "https://raw.githubusercontent.com/atomosdovini/ads-app/main/pages/api/assets/ecoexchange.png"
   }
 
   var select_ads_data = randomize[Math.floor(Math.random()*randomize.length)]
