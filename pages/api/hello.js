@@ -31,10 +31,10 @@ async function handler(req, res) {
   ];
 
   var dict = {
-    Binance: "https://www.binance.com/",
-    Apple: "https://www.apple.com/",
-    Facebook: "https://www.facebook.com/",
-    Ecoexchange: "https://ecoexchange.tech/"
+    Binance: "binance.com/",
+    Apple: "apple.com/",
+    Facebook: "facebook.com/",
+    Ecoexchange: "ecoexchange.tech/"
   };
 
   var logo = {
