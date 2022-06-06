@@ -1,5 +1,5 @@
 import Cors from 'cors'
-
+import Apple from './assets/apple.png'
 // Initializing the cors middleware
 const cors = Cors({
   methods: ['GET', 'HEAD'],
@@ -26,19 +26,22 @@ async function handler(req, res) {
   var randomize = [
     "Binance",
     "Apple",
-    "Facebook"
+    "Facebook",
+    "Ecoexchange"
   ];
 
   var dict = {
-    Binance: "loginbinance",
-    Apple: "loginapple",
-    Facebook: "loginfacebook"
+    Binance: "https://www.binance.com/",
+    Apple: "https://www.apple.com/",
+    Facebook: "https://www.facebook.com/",
+    Ecoexchange: "https://ecoexchange.tech/"
   };
 
   var logo = {
-    Binance: "https://ads-app-atomosdovini.vercel.app/static/media/logo200x200.811c624f.png",
-    Apple: "https://ads-app-atomosdovini.vercel.app/static/media/logo200x200.811c624f.png",
-    Facebook: "https://ads-app-atomosdovini.vercel.app/static/media/logo200x200.811c624f.png"
+    Binance:"https://ads-app-atomosdovini.vercel.app/pages/api/assets/binance.png",
+    Apple: "https://ads-app-atomosdovini.vercel.app/pages/api/assets/apple.png",
+    Facebook: "https://ads-app-atomosdovini.vercel.app/pages/api/assets/facebook.png",
+    Ecoexchange: "https://ads-app-atomosdovini.vercel.app/pages/api/assets/ecoexchange.png"
   }
 
   var select_ads_data = randomize[Math.floor(Math.random()*randomize.length)]
@@ -55,67 +58,7 @@ async function handler(req, res) {
     logo: logo
   
   })
-//   // Rest of the API logic
-//   res.json({ message: 'Hello Everyone!' })
+
 }
 
 export default handler
-
-// import Cors from 'cors'
-// import initMiddleware from '../../lib/init-middleware'
-
-// // Initialize the cors middleware
-// // Initializing the cors middleware
-// const cors = Cors({
-//   methods: ['GET', 'HEAD'],
-// })
-
-
-// function runMiddleware(req, res, fn) {
-//   return new Promise((resolve, reject) => {
-//     fn(req, res, (result) => {
-//       if (result instanceof Error) {
-//         return reject(result)
-//       }
-
-//       return resolve(result)
-//     })
-//   })
-// }
-
-
-// export default async function handler(req, res) {
-
-//   var randomize = [
-//     "Binance",
-//     "Apple",
-//     "Facebook"
-//   ];
-
-//   var dict = {
-//     Binance: "loginbinance",
-//     Apple: "loginapple",
-//     Facebook: "loginfacebook"
-//   };
-
-//   var logo = {
-//     Binance: "http://localhost:3000/static/media/logo200x200.811c624f.png",
-//     Apple: "loginapple",
-//     Facebook: "loginfacebook"
-//   }
-
-//   var select_ads_data = randomize[Math.floor(Math.random()*randomize.length)]
-//   const select = select_ads_data
-//   var url = dict[select]
-//   var logo = logo[select]
-  
-//   await runMiddleware(req, res, cors)
-
-//   res.status(200).json({ 
-    
-//     company: select_ads_data,
-//     url: 'https://' + url,
-//     logo: logo
-  
-//   })
-// }
